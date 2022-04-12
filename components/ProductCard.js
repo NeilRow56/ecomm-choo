@@ -1,8 +1,10 @@
 import Image from 'next/image';
+import 'react-toastify/dist/ReactToastify.css';
 import React from 'react';
 import Link from 'next/link';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../features/CartSlice';
+import { ToastContainer, toast } from 'react-toastify';
 
 function ProductCard({ product }) {
 	const dispatch = useDispatch();
@@ -32,6 +34,7 @@ function ProductCard({ product }) {
 				>
 					ADD TO CART
 				</button>
+				<ToastContainer />
 			</span>
 		</div>
 	);
