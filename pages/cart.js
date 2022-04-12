@@ -4,10 +4,12 @@ import Navbar from '../components/Navbar';
 
 const cart = () => {
 	return (
-		<div className="w-full max-w-[1240px] mx-auto ">
+		<>
 			<Navbar />
-			<CartScreen />
-		</div>
+			<div className="w-full max-w-[1240px] mx-auto ">
+				<CartScreen />
+			</div>
+		</>
 	);
 };
 
